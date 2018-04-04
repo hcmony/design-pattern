@@ -8,12 +8,10 @@ package com.hcmony.singleton;
  * @since V1.0.0, 2018/04/03 20:13
  */
 public class Singleton {
-	private static Singleton singleton;
+	private volatile static Singleton singleton = new Singleton();
 	private Singleton (){}
-	public static Singleton getInstance(){
-		if(singleton==null){
-			singleton = new Singleton();
-		}
+	public static synchronized Singleton getInstance(){
 		return singleton;
 	}
+
 }
