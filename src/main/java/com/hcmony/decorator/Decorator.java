@@ -7,5 +7,9 @@ package com.hcmony.decorator;
  * @author hcmony
  * @since V1.0.0, 2018/04/03 20:25
  */
-public class Decorator {
+public class Decorator implements DecoratorInterface{
+	@Override
+	public void add() {
+		System.out.println("这是Decorator的add 方法");
+	}
 }

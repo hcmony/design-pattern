@@ -5,7 +5,8 @@ package com.hcmony.strategy;
  * <p></p>
  *
  * @author hcmony
- * @since V1.0.0, 2018/04/03 20:29
+ * @since V1.0.0, 2018/04/09 21:29
  */
-public class Strategy {
+public interface IntefaceStrategy {
+	public int calculate(String exp);
 }

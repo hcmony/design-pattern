@@ -5,7 +5,11 @@ package com.hcmony.template;
  * <p></p>
  *
  * @author hcmony
- * @since V1.0.0, 2018/04/03 20:30
+ * @since V1.0.0, 2018/04/09 21:25
  */
-public class Template {
+public class Template extends AbstractTemplate {
+	@Override
+	public int calculate(int num1, int num2) {
+		return num1 +num2;
+	}
 }

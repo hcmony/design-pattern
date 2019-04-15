@@ -7,5 +7,6 @@ package com.hcmony.state;
  * @author hcmony
  * @since V1.0.0, 2018/04/03 20:29
  */
-public class State {
+public interface State {
+	public void doAction(Context context);
 }

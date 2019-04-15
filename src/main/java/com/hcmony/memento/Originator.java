@@ -5,14 +5,10 @@ package com.hcmony.memento;
  * <p></p>
  *
  * @author hcmony
- * @since V1.0.0, 2018/04/03 20:28
+ * @since V1.0.0, 2018/04/09 21:06
  */
-public class Memento {
+public class Originator {
 	private String state;
-
-	public Memento(String state) {
-		this.state = state;
-	}
 
 	public String getState() {
 		return state;
@@ -20,5 +16,13 @@ public class Memento {
 
 	public void setState(String state) {
 		this.state = state;
+	}
+
+	public Memento saveStateToMemento(){
+		return new Memento(state);
+	}
+
+	public void getStateFromMemento(Memento Memento){
+		state = Memento.getState();
 	}
 }

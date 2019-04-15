@@ -8,4 +8,7 @@ package com.hcmony.mediator;
  * @since V1.0.0, 2018/04/03 20:28
  */
 public class Mediator {
+	public static  void say(String name){
+		System.out.println(name + ":  Mediator " );
+	}
 }

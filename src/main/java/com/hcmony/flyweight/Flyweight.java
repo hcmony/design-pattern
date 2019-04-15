@@ -8,4 +8,15 @@ package com.hcmony.flyweight;
  * @since V1.0.0, 2018/04/03 20:25
  */
 public class Flyweight {
+	private  String name;
+	public Flyweight(String name){
+		this.name=name;
+	}
+
+	@Override
+	public String toString() {
+		return "Flyweight{" +
+				"name='" + name + '\'' +
+				'}';
+	}
 }

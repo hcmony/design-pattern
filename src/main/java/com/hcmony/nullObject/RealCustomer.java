@@ -5,17 +5,21 @@ package com.hcmony.nullObject;
  * <p></p>
  *
  * @author hcmony
- * @since V1.0.0, 2018/04/03 20:29
+ * @since V1.0.0, 2018/04/09 21:18
  */
-public class NullObject  extends AbstractCustomer {
+public class RealCustomer extends AbstractCustomer {
+
+	public RealCustomer(String name) {
+		this.name = name;
+	}
 
 	@Override
 	public boolean isNil() {
-		return true;
+		return false;
 	}
 
 	@Override
 	public String getName() {
-		return "NullObject";
+		return name;
 	}
 }

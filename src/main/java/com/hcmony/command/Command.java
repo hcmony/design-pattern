@@ -8,4 +8,7 @@ package com.hcmony.command;
  * @since V1.0.0, 2018/04/03 20:26
  */
 public class Command {
+	public void action(){
+		System.out.println("Command    action ");
+	}
 }
